@@ -19,6 +19,11 @@
 import os, colorama
 from colorama import Fore, Style
 
+# Inicializa o Colorama (corrige as cores no terminal do Windows)
+init(autoreset=True)
+
+
 niveis = [1, 2, 3, 4, 5]
 # 0 1 2 3 4 
 
+print(Fore.RED + "Nível Muito baixo! (Crítico)")
