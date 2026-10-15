@@ -1,10 +1,11 @@
-import os, colorama
+import os, colorama, random
 from colorama import Fore, Style
-
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-clear()
+clear() #limpar terminal
+
+
 niveis = [1, 2, 3, 4, 5]
 # 0 1 2 3 4 em posição de index
 
@@ -38,7 +39,6 @@ for nivel in niveis:
     cor_msg(nivel)
     
 # simulação com apenas um nível e aleatoriamente 
-import random
 print('\n\nSimulação com nível aleatório')
 sorteado = random.choice(niveis) #vai escolher entre um dos numeros em níveis e sorteado equivale ao numero sorteado
 print(f'Nível {sorteado}:')
